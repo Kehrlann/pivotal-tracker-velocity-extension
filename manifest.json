@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Tracker Velocity",
+  "version": "1.0",
+  "description": "Sets the velocity in Pivotal Tracker",
+  "homepage_url": "https://github.com/Kehrlann/pivotal-tracker-velocity-extension",
+  "icons": {
+    "48": "icons/tracker-48.png",
+    "96": "icons/tracker-96.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "src/background.ts"
+    ]
+  }
+}

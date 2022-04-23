@@ -1,0 +1,25 @@
+{
+  "name": "pivotal-tracker-velocity-extension",
+  "version": "1.0.0",
+  "description": "Updates the velocity on a Tracker project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kehrlann/pivotal-tracker-velocity-extension.git"
+  },
+  "author": "git@garnier.wf",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Kehrlann/pivotal-tracker-velocity-extension/issues"
+  },
+  "homepage": "https://github.com/Kehrlann/pivotal-tracker-velocity-extension#readme",
+  "dependencies": {
+    "webextension-polyfill": "^0.9.0"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.5.0",
+    "@types/webextension-polyfill": "^0.8.3",
+    "parcel": "^2.5.0",
+    "typescript": "^4.6.3",
+    "web-ext": "^6.8.0"
+  }
+}
