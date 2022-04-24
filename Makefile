@@ -27,6 +27,7 @@ dev: build ## Continuously rebuild
 
 .PHONY: package
 package: build
-	@npx web-ext build -s dist
+	@npx web-ext build -s dist # chrome
+	@npx web-ext sign --api-key "$(MOZ_JWT_ISSUER)" --api-secret "$(MOZ_JWT_SECRET)" -s dist # firefox
 
 # TODO: publish release?

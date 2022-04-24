@@ -1,25 +1,26 @@
 {
   "manifest_version": 2,
   "name": "Tracker Velocity Update",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sets the velocity in Pivotal Tracker, for a single project",
   "homepage_url": "https://github.com/Kehrlann/pivotal-tracker-velocity-extension",
   "icons": {
     "48": "icons/tracker-48.png",
     "96": "icons/tracker-96.png"
   },
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab"],
   "background": {
-    "scripts": [
-      "src/background.ts"
-    ]
+    "scripts": ["src/background.ts"]
   },
   "content_scripts": [
     {
       "matches": ["https://www.pivotaltracker.com/n/projects/625235"],
       "js": ["src/tracker-velocity.ts"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tracker-velocity-update@garnier.wf"
+    }
+  }
 }
