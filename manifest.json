@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Tracker Velocity",
-  "version": "1.0",
-  "description": "Sets the velocity in Pivotal Tracker",
+  "name": "Tracker Velocity Update",
+  "version": "0.0.1",
+  "description": "Sets the velocity in Pivotal Tracker, for a single project",
   "homepage_url": "https://github.com/Kehrlann/pivotal-tracker-velocity-extension",
   "icons": {
     "48": "icons/tracker-48.png",
@@ -15,5 +15,11 @@
     "scripts": [
       "src/background.ts"
     ]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.pivotaltracker.com/n/projects/625235"],
+      "js": ["src/tracker-velocity.ts"]
+    }
+  ]
 }

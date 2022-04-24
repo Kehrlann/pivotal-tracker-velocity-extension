@@ -4,6 +4,9 @@
 # MacOS
 .DS_Store
 
+# Web extensions
+web-ext-artifacts
+
 # Logs
 logs
 *.log

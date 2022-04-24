@@ -1,6 +1,6 @@
 {
   "name": "pivotal-tracker-velocity-extension",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Updates the velocity on a Tracker project",
   "repository": {
     "type": "git",
